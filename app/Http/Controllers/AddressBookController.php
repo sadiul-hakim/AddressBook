@@ -36,7 +36,7 @@ class AddressBookController extends Controller
             'country' => 'required',
             'city' => 'required',
             'street' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:address_books',
             'phone' => 'required'
         ]);
         $created = AddressBook::create($validated);
@@ -71,7 +71,7 @@ class AddressBookController extends Controller
             'country' => 'required',
             'city' => 'required',
             'street' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:address_books',
             'phone' => 'required'
         ]);
 
